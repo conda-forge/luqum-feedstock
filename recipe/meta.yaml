@@ -1,5 +1,5 @@
 {% set name = "luqum" %}
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/jurismarches/luqum/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e784c5ac2bbc1558c8c38d0470e30a07440a60f4d271e5d9eb57623453aa9ce4
+  sha256: bb6e8569a921c30c082d2ff5b4f96ab785b6d66610e26948a8826f51b40e06e7
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
