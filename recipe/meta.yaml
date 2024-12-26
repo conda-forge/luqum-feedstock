@@ -18,6 +18,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - ply >=3.11
     - python >={{ python_min }}
